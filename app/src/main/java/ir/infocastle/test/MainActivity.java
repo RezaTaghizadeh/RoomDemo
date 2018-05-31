@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private AppDatabase db;
     private UserDao userDao;
-    User userShow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
