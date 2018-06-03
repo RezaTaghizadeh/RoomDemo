@@ -7,24 +7,16 @@ import android.arch.persistence.room.PrimaryKey;
 /**
  * Created by admin on 5/31/2018.
  */
-@Entity(tableName = "userAnswerTable")
+//tableName = "userAnswerTable"
+@Entity(primaryKeys = {"appointment", "TableNumber","QuestionNumber"},tableName = "userAnswerTable")
 public class UserAnswer {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+    //@PrimaryKey(autoGenerate = true)
 
     private int appointment;
     private int TableNumber;
     private int QuestionNumber;
 
     private String Answer;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getAppointment() {
         return appointment;
